@@ -66,14 +66,24 @@ meta_keywords: fooooooo
         </div>
       </div>
 
+      
+
       <!-- Page Content -->
       <div class="row">
         <div class="col-md-10 col-md-offset-1 col-sm-12">
+          
+
           <h2>{{ page.title }}</h2>
+          {% block main %}
           Coming Soon.
+
+          {% endblock %}
+
         </div>
       </div>
     </div>
+
+    
 
     <!-- Javascripts -->
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
