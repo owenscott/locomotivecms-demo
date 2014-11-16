@@ -61,6 +61,10 @@ meta_keywords: fooooooo
               <ul class="nav navbar-nav">
                 <li {% if page.slug == "index" %}class="active"{% endif %}>
                   <a href="/">Home</a>
+
+                </li>
+                <li {% if page.slug == "about" %}class="active"{% endif %}>
+                  <a href="/about">About</a>
                 </li>
               </ul>
             </div>
@@ -77,12 +81,18 @@ meta_keywords: fooooooo
 
           <h2>{{ page.title }}</h2>
           {% block main %}
-          Coming Soon.
+            <p>Coming Soon.</p>
+            {% assign photo = "temppeliaukio.jpg" | theme_image_url %}
+            {% include 'img_box' with photo, caption: "Temppeliaukio Church, Helsinki", size: "1000x300#" %}
 
           {% endblock %}
 
+
+
         </div>
       </div>
+      {% include 'footer' %}
+
     </div>
 
     
