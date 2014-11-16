@@ -68,3 +68,7 @@ div.img-box p {
   padding: 10px;
   text-align: center;
 }
+
+body.page-posts div.post-listing {
+  margin-bottom: 20px;
+}
